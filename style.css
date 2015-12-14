@@ -1,0 +1,11 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	margin:0;
+	padding:0;
+	background-color:#F0F0F0;
+}
+input, p, ul, li{
+	margin:0;
+	padding:0;
+}

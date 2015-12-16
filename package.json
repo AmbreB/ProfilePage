@@ -1,0 +1,23 @@
+{
+  "name": "profilepage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "zepto": "^0.0.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AmbreB/ProfilePage.git"
+  },
+  "author": "andrea",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AmbreB/ProfilePage/issues"
+  },
+  "homepage": "https://github.com/AmbreB/ProfilePage#readme"
+}

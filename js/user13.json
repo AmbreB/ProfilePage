@@ -1,0 +1,12 @@
+{
+    "id":13,
+    "first_name":"Andréa",
+    "last_name":"Buisset",
+    "occupation":"UI/UX Designer",
+    "badges":"Aucun",
+    "projets":["Projet1","Projet2","Projet3"],
+    "contact":{
+    	"mail":"andrea.buisset@hotmail.fr",
+    	"website":"www.andreabuisset.fr"
+    }
+}

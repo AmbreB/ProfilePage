@@ -41,10 +41,9 @@ $(function(){
 
 $(function(){
 
-	$('body').on('click','a',function(){		// Quand je selectionne un lien 
-		$('.hide').hide();						// Cache tous les elements avec la classe "hide"
-		var id = $(this).attr('href');			// Récupère l'attribut "href" contenue dans l'élement courant et le place dans la variable "id"
-		$(id).show();							// Montre l'element contenu dans la variable "id"
+	$('body').on('click', 'a', function(){
+		var adresse = $(this).attr('adresse');
+		$('.colcenter').load(adresse);
 	});
 
 	var id = 13;
@@ -59,5 +58,10 @@ $(function(){
 	  	var rendered = Mustache.render(template, json);
 	  	$('body').html(rendered);
   	});
-  	
+  	$('body').on('click', '.contact', function(){
+  		$('.popup, .overlay').removeClass('hide');
+  	});
+  	$('body').on('click', '.overlay',function(){
+  		$('.popup, .overlay').addClass('hide');
+  	});
 });

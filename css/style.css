@@ -83,7 +83,17 @@ img {
 	left:0;
 }
 .popup {
-	background-color:#fff;
-	width:50%;
+	background-color:#F0F0F0;
+	text-align:center;
+	width:30%;
 	height:300px;
+	margin: auto;
+  	position: absolute;
+  	top: 0; 
+  	left: 0; 
+	bottom: 0; 
+	right: 0;
+}
+.popup h1 {
+	margin:65px 0 30px 0;
 }

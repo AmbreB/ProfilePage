@@ -11,10 +11,16 @@
 	<link rel="stylesheet" href="css/style.css">
 	<title></title>
 </head>
-<body onload="loadUser">
+<body>
 	<script id="template" type="x-tmpl-mustache">
 	<div class="overlay hide">
-		<div class="popup hide"> Coucou </div>
+		<div class="popup hide"> 
+			<div id="contact">
+				<h1>{{first_name}} {{last_name}}</h1>
+				<p>Mail : <span class="mail">{{contact.email}}</span></p>
+				<p>Website : <span class="website">{{contact.website}}</span></p>
+			</div>
+		</div>
 	</div>
 	<section class="presentation">
 		<img src="andrea.png" alt="Photo de présentation"/>
@@ -32,23 +38,14 @@
 	<div class="container">
 		<section>
 			<div class="colcenter">
-				<div class="hide" id="projets" style="display:block;">
-				PROJET Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi rem sed eligendi dolores necessitatibus excepturi deserunt magni voluptas non sapiente, nisi nam expedita ullam nihil. Inventore dolorum, quas ab! Fuga.
-				</div>
-				<div class="hide" id="badges">
-				BADGES Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi rem sed eligendi dolores necessitatibus excepturi deserunt magni voluptas non sapiente, nisi nam expedita ullam nihil. Inventore dolorum, quas ab! Fuga.
-				</div>
-				<div class="hide" id="contact">
-				<p>Mail : <span class="mail">{{contact.email}}</span></p>
-				<p>Website : <span class="website">{{contact.website}}</span></p>
-				</div>
+				Bienvenue sur mon profil !
 			</div>
 			<div class="colaside">
 				<nav id="menu">
 					<ul>
-						<li><a href="#projets">> Projets</a></li>
-						<li><a href="#badges">> Badges</a></li>
-						<li><a href="#contact">> Contact</a></li>
+						<li><a href="#projets" class="projet" adresse="parts/projets.html">> Projets</a></li>
+						<li><a href="#badges" class="badges" adresse="parts/badges.html">> Badges</a></li>
+						<li><a href="#" class="contact">> Contact</a></li>
 					</ul>
 				</nav>
 			</div>
